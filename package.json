@@ -19,7 +19,6 @@
     "locus": "^2.0.4",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.6",
-	"dotenv": "^8.2.0"
     "node-geocoder": "^3.27.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",

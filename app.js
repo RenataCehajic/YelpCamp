@@ -25,15 +25,15 @@ var commentRoutes 		= require("./routes/comments");
 // 	useUnifiedTopology: true
 // });
 
-// mongoose.connect("mongodb://localhost:27017/yelp_camp_v12Deployed_Stripe", {
-// 	useNewUrlParser: true,
-// 	useUnifiedTopology: true
-// });
-
-mongoose.connect("mongodb+srv://Renata:Renatarenata@cluster0.rh4lq.mongodb.net/YelpCamp?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://localhost:27017/yelp_camp_v12Deployed_Stripe", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
-}); 
+});
+
+// mongoose.connect("mongodb+srv://Renata:Renatarenata@cluster0.rh4lq.mongodb.net/YelpCamp?retryWrites=true&w=majority", {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true
+// }); 
 
 mongoose.set('useFindAndModify', false);
 

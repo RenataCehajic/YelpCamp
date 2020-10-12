@@ -18,9 +18,14 @@ var commentRoutes 		= require("./routes/comments");
 	campgroundRoutes 	= require("./routes/campgrounds"); 
 	authRoutes 	        = require("./routes/index"); 	
 
-var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_v12Deployed_Stripe"
+// var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_v12Deployed_Stripe"
 
-mongoose.connect(url, {
+// mongoose.connect(url, {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true
+// });
+
+mongoose.connect("mongodb://localhost:27017/yelp_camp_v12Deployed_Stripe", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });

@@ -2,8 +2,8 @@ var express = require("express");
 var router = express.Router(); 
 var Campground = require("../models/campground");
 let { checkCampgroundOwnership, isLoggedIn, isPaid } = require("../middleware");
-var NodeGeocoder = require('node-geocoder');
 router.use(isLoggedIn, isPaid);
+var NodeGeocoder = require('node-geocoder');
  
 var options = {
   provider: 'google',
